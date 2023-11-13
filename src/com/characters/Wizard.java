@@ -7,6 +7,14 @@ public class Wizard implements Character{
     private int x;
     private int y;
 
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
     public Wizard(String name, int age, String ability) {
         this.name = name;
         this.age = age;

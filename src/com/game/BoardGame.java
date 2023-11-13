@@ -29,7 +29,7 @@ public class BoardGame {
     public void addCharacter(Character character, int x, int y) {
         if(isValidPosition(x, y)){
             characters.add(character);
-            objectPositions.put(character, new int[]{0,0});
+            objectPositions.put(character, new int[]{x,y});
         }else {
             System.out.println("Invalid position for character.");
         }

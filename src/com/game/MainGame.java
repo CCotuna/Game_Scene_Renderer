@@ -39,7 +39,7 @@ public class MainGame {
         newLegion.addGroup(smallGroup);
         newLegion.addGroup(small2Group);
 
-        newLegion.moveTo(38,38);
+        newLegion.moveTo(24,23);
         newLegion.render();
 
 
@@ -54,7 +54,13 @@ public class MainGame {
         House europeanHouse = europeanHouseBuilder.getResult();
         boardGame.addHouse(europeanHouse, europeanHouse.getPositionX(),europeanHouse.getPositionY());
 
-//      europeanHouse.render();
+        // System.out.println(human.getX() + " " + human.getY());
+        boardGame.addCharacter(human, human.getX(), human.getY());
+        boardGame.addCharacter(human2, human2.getX(), human2.getY());
+        boardGame.addCharacter(knight, knight.getX(), knight.getY());
+        boardGame.addCharacter(wizard, wizard.getX(), wizard.getY());
+
+        // europeanHouse.render();
 
 
         boardGame.render();
